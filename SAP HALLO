@@ -29,23 +29,22 @@ skip 2.
 write: 'Hayatta basarilar dilerim.'.
 uline.
 
+WRITE: 'Mustafa'.
+ULINE.
+SKIP.
 
-DATA : gv_text_01 TYPE c LENGTH 50 VALUE '11112222333344445555'.
+WRITE: 'Gedikli'.
+ULINE.
+SKIP.
 
-WRITE: gv_text_01.
+WRITE: 'Stuttgart'.
+ULINE.
+SKIP.
 
-REPLACE ALL OCCURRENCES OF '3' IN gv_text_01 WITH 'W'.
-skip 2.
-WRITE: / gv_text_01.
+WRITE: 'SAP-ABAP DEVELOPER'.
+ULINE.
+SKIP.
 
-REPLACE ALL OCCURRENCES OF 'WW' IN gv_text_01 WITH 'ZZ'.
-skip 2.
-WRITE: / gv_text_01.
+WRITE: 'ABAP-SAP Entwicklung m. Certified Development Associate ABAP m. NetWeaver – Agiles Projektmanagement m. Scrum–Online'.
+ULINE.
 
-REPLACE ALL OCCURRENCES OF 'w' IN gv_text_01 WITH 'R' RESPECTING CASE.
-skip 2.
-WRITE: / gv_text_01.
-
-REPLACE ALL OCCURRENCES OF 'w' IN gv_text_01 WITH 'R' IGNORING CASE.
-skip 2.
-WRITE: / gv_text_01.
