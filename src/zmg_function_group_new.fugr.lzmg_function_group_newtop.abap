@@ -1,0 +1,3 @@
+FUNCTION-POOL ZMG_FUNCTION_GROUP_NEW.       "MESSAGE-ID ..
+
+* INCLUDE LZMG_FUNCTION_GROUP_NEWD...        " Local class definition

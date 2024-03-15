@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>20 Aralik-Test Function Group DAY</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZMG_FUNCTION_GROUP_NEWTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZMG_FUNCTION_GROUP_NEW</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZMG_FM_01</FUNCNAME>
+     <SHORT_TEXT>Test FM</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_NUMBER_01</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_NUMBER_02</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RESULT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_NUMBER_01</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>4 Byte Signed Integer</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_NUMBER_02</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>4 Byte Signed Integer</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>4 Byte Signed Integer</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZMG_FM_02</FUNCNAME>
+     <SHORT_TEXT>Test FM2</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_TEXT_01</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR40</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_TEXT_02</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR40</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_UPPERCASE</PARAMETER>
+       <TYP>XFELD</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_TEXT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR80</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_TEXT_01</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character field of length 40</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_TEXT_02</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character field of length 40</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_UPPERCASE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Checkbox</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_TEXT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Char 80</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZMG_FM_04</FUNCNAME>
+     <SHORT_TEXT>FM 4 _20 Aralik</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZMG_POPUP_GET_NEW_URL</FUNCNAME>
+     <SHORT_TEXT>Yeni URL.</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_URL</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>S_URL</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_ANSWER</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_URL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Travel agency homepage URL</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_ANSWER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
